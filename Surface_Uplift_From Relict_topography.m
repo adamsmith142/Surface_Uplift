@@ -12,7 +12,7 @@ DEM.Z(DEM.Z <= 0) = NaN;
 
 %extract stream network
 S = STREAMobj(FD, 'minarea', 1e6, 'unit', 'map');
-S = modify(S, 'upstreamto', fault_line);
+%S = modify(S, 'upstreamto', fault_line); - if you have a shapefile for baselevel you could read it in as fault_line and modify the stream network upstream of this
 
 %perform chi transformation, here mn is set to 0.45
 C = chitransform(S, A, 'mn', 0.45);
