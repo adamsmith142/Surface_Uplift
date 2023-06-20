@@ -660,7 +660,7 @@ y_grid_lat = y_grid + min(lat);
 writematrix(x_grid_lon, 'x_grid.txt')
 writematrix(y_grid_lat, 'y_grid.txt')
 writematrix(Z_SU, 'surface_uplift.txt')
-writematrix(Z_ustar_matrix*scale, 'ustar.txt')
+writematrix(Z_ustar, 'ustar.txt')
 
 %write out a file that contains the incision between projected relict
 %landscape and present day landscape
